@@ -7,9 +7,13 @@ export default function Home(props) {
     const { navigation, ...restProps } = props;
 
   return (
-    <View style={styles.container}>
+
+    <>
+      {/* <Text style={styles.titre}>POKÉDEX</Text> */}
+      <View style={styles.container}>
         <ListePokemons navigation={navigation} />
     </View>
+    </>
   );
 }
 
@@ -20,4 +24,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  titre: {
+    //textAlign: "center",
+    paddingTop: "10%",
+    paddingBottom: "10%",
+  }
 });
