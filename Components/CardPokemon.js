@@ -20,7 +20,9 @@ export default function CardPokemon(props){
     }
 
     return(
-        <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('PokemonDetail')}>
+        <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('PokemonDetail', { 
+            pokemonDatas : pokemonDatas
+            })}>
 
         <View style={styles.containerImage}>
             { pokemonImg ?
